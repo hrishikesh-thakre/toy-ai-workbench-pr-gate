@@ -25,6 +25,9 @@ Generated `runs/` evidence remains ignored.
 This line exists to trigger the same-repository PR gate workflow with the
 accepted evidence fixture.
 
+This second line verifies that the sticky PR comment is updated instead of
+duplicated after a new commit.
+
 ## Local Checks
 
 ```bash
