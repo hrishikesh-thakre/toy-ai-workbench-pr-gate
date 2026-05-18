@@ -20,6 +20,11 @@ Synthetic sanitized evidence lives in `workbench-evidence/`:
 
 Generated `runs/` evidence remains ignored.
 
+## Proof PR
+
+This line exists to trigger the same-repository PR gate workflow with the
+accepted evidence fixture.
+
 ## Local Checks
 
 ```bash
