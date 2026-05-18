@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "operation": "workbench_pr_gate",
+  "outcome": "block",
+  "ok": true,
+  "run_id": "pr-gate-demo-scaffold-fallback",
+  "evidence_source": "fallback_scaffold",
+  "source_run_dir": "workbench-evidence/scaffold-fallback",
+  "validation_status": "passed",
+  "quality_gate_status": "unknown",
+  "reason": "No complete Workbench acceptance evidence found for this PR.",
+  "reason_codes": [
+    "validation.accepted",
+    "pr_gate.acceptance_evidence_missing"
+  ],
+  "evidence": [
+    {
+      "label": "validation_report",
+      "path": "validation_report.json",
+      "present": true
+    },
+    {
+      "label": "revision_decision",
+      "path": "revision_decision.json",
+      "present": false
+    },
+    {
+      "label": "model_output",
+      "path": "model_output.md",
+      "present": true
+    },
+    {
+      "label": "run_log",
+      "path": "run_log.jsonl",
+      "present": true
+    }
+  ],
+  "required_next_action": "Provide a complete Workbench acceptance run with validation_report.json and revision_decision.json, then regenerate the PR gate artifact."
+}
