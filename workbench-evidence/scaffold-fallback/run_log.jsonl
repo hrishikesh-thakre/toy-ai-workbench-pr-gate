@@ -1,0 +1,2 @@
+{"schema_version":1,"run_id":"pr-gate-demo-scaffold-fallback","event":"model_response_captured","response_source":"ci","created_at":"2026-05-18T00:00:00Z"}
+{"schema_version":1,"run_id":"pr-gate-demo-scaffold-fallback","event":"validation_completed","status":"passed","created_at":"2026-05-18T00:01:00Z"}

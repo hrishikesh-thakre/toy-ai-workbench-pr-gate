@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "run_id": "pr-gate-demo-scaffold-fallback",
+  "project": "toy_ai_workbench_pr_gate",
+  "profile": "scaffold",
+  "generated_at": "2026-05-18T00:01:00Z",
+  "commands_run": [
+    {
+      "name": "scaffold_help_smoke",
+      "command": "python tools/validate_run.py --help",
+      "cwd": ".",
+      "required": true,
+      "weight": 1.0,
+      "exit_code": 0,
+      "status": "passed",
+      "duration_ms": 90
+    }
+  ],
+  "commands_not_run": [],
+  "artifact_checks": [
+    {
+      "name": "scaffold_artifact_presence",
+      "status": "passed",
+      "summary": "Fallback scaffold evidence includes validation output for PR visibility.",
+      "details": [
+        "Found validation_report.json.",
+        "Found model_output.md.",
+        "Found run_log.jsonl.",
+        "revision_decision.json is intentionally absent and must not be treated as acceptance evidence."
+      ],
+      "reason_codes": [
+        "scaffold.validation_present"
+      ]
+    }
+  ],
+  "review_checks": [],
+  "missing_context_notes": {
+    "needs_review": [
+      "Provide a complete Workbench acceptance run with validation_report.json and revision_decision.json before treating this PR as accepted."
+    ],
+    "info": [
+      "Scaffold fallback evidence is visibility evidence only."
+    ]
+  },
+  "overall_status": "passed",
+  "sign_off_ready": true,
+  "confidence": 0.5,
+  "summary": {
+    "commands_passed": 1,
+    "commands_failed": 0,
+    "checks_passed": 1,
+    "checks_needs_review": 0,
+    "checks_failed": 0
+  },
+  "policy_pack": {
+    "name": "scaffold",
+    "version": "v0.2"
+  },
+  "reason_codes": [
+    "validation.accepted"
+  ],
+  "reason_sources": [
+    {
+      "code": "validation.accepted",
+      "status": "passed",
+      "severity": "info",
+      "source": "validation_report",
+      "name": "scaffold",
+      "summary": "Scaffold validation passed, but quality-gate evidence is not present.",
+      "details": [
+        "This fallback is not a complete Workbench acceptance run.",
+        "PR acceptance still requires revision_decision.json."
+      ]
+    }
+  ]
+}
