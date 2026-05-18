@@ -14,6 +14,7 @@ synthetic sanitized Workbench evidence committed in this toy repository.
 - Same-repository PR: <https://github.com/hrishikesh-thakre/toy-ai-workbench-pr-gate/pull/1>
 - First PR run: <https://github.com/hrishikesh-thakre/toy-ai-workbench-pr-gate/actions/runs/26039196095>
 - Sticky-comment update PR run: <https://github.com/hrishikesh-thakre/toy-ai-workbench-pr-gate/actions/runs/26039299132>
+- Node 24 action update smoke run: <https://github.com/hrishikesh-thakre/toy-ai-workbench-pr-gate/actions/runs/26043403995>
 
 ## Verified Outcomes
 
@@ -24,10 +25,14 @@ synthetic sanitized Workbench evidence committed in this toy repository.
 | Dispatch needs review | 26039447479 | `needs_review` | `dispatch-needs-review/` |
 | Dispatch block | 26039474439 | `block` | `dispatch-block/` |
 | Dispatch scaffold fallback | 26039499619 | `block` | `dispatch-scaffold-fallback/` |
+| Node 24 action update smoke | 26043403995 | `accept` | `node24-action-update-smoke/` |
 
 The same-repository PR had exactly one `<!-- ai-workbench-pr-gate -->` sticky
 comment after the second PR run, and that comment contained the `Accept`
 outcome.
+
+The proof PR was closed unmerged after the durable proof records were committed,
+because it was only a trigger PR. The branch was deleted.
 
 ## Local Checks
 
